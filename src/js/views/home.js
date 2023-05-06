@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
 
@@ -44,7 +45,7 @@ const Character = (props) => {
 					<p className="card-text">{
 						props.item.house
 					}</p>
-					<button className="btn btn-primary">Read detail</button>
+					<Link to={`/character/${props.item.id}`} className="btn btn-primary">Read detail</Link>
 				</div>
 			</div>
 		</div>
